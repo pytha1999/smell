@@ -7,30 +7,30 @@ public class LongMethodExample {
     }
 
     public int calculateTotal(int a, int b, int c, int d, int e) {
-        int sum = a + b + c + d + e;
-        int product = a * b * c * d * e;
-        int difference = a - b - c - d - e;
-        int quotient = a / b / c / d / e;
+        int sum3 = a + b + c + d + e;
+        int product3 = a * b * c * d * e;
+        int difference3 = a - b - c - d - e;
+        int quotient3 = a / b / c / d / e;
 
-        int total = sum + product + difference + quotient;
-
-        // Imaginez que cette méthode continue avec plus de calculs...
-        // ...
-         int sum = a + b + c + d + e;
-        int product = a * b * c * d * e;
-        int difference = a - b - c - d - e;
-        int quotient = a / b / c / d / e;
-
-        int total = sum + product + difference + quotient;
+        int total3 = sum + product + difference + quotient;
 
         // Imaginez que cette méthode continue avec plus de calculs...
         // ...
-         int sum = a + b + c + d + e;
-        int product = a * b * c * d * e;
-        int difference = a - b - c - d - e;
-        int quotient = a / b / c / d / e;
+         int sum2 = a + b + c + d + e;
+        int product2 = a * b * c * d * e;
+        int difference2 = a - b - c - d - e;
+        int quotient2 = a / b / c / d / e;
 
-        int total = sum + product + difference + quotient;
+        int total2 = sum + product + difference + quotient;
+
+        // Imaginez que cette méthode continue avec plus de calculs...
+        // ...
+         int sum4 = a + b + c + d + e;
+        int product4 = a * b * c * d * e;
+        int difference4 = a - b - c - d - e;
+        int quotient4 = a / b / c / d / e;
+
+        int total4 = sum + product + difference + quotient;
 
         // Imaginez que cette méthode continue avec plus de calculs...
         // ...
