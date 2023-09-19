@@ -16,6 +16,24 @@ public class LongMethodExample {
 
         // Imaginez que cette méthode continue avec plus de calculs...
         // ...
+         int sum = a + b + c + d + e;
+        int product = a * b * c * d * e;
+        int difference = a - b - c - d - e;
+        int quotient = a / b / c / d / e;
+
+        int total = sum + product + difference + quotient;
+
+        // Imaginez que cette méthode continue avec plus de calculs...
+        // ...
+         int sum = a + b + c + d + e;
+        int product = a * b * c * d * e;
+        int difference = a - b - c - d - e;
+        int quotient = a / b / c / d / e;
+
+        int total = sum + product + difference + quotient;
+
+        // Imaginez que cette méthode continue avec plus de calculs...
+        // ...
 
         return total;
     }
