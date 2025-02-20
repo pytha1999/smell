@@ -1,3 +1,47 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class ExampleClass {
+
+    // Méthode avec un fan-out élevé
+    public void processData() {
+        ArrayList<String> list = new ArrayList<>(); // Appel à ArrayList (fan-out)
+        list.add("Item1");
+        list.add("Item2");
+        System.out.println("Processing data..."); // Appel à System.out (fan-out)
+        HelperClass helper = new HelperClass();   // Appel à HelperClass (fan-out)
+        helper.performAction();                   // Appel à une méthode d'une autre classe (fan-out)
+    }
+
+    // Méthode avec un fan-out modéré
+    public void analyzeData() {
+        HashMap<Integer, String> map = new HashMap<>(); // Appel à HashMap (fan-out)
+        map.put(1, "Data1");
+        map.put(2, "Data2");
+        System.out.println("Analyzing data..."); // Appel à System.out (fan-out)
+    }
+
+    // Méthode avec un fan-out bas
+    public void printSummary() {
+        System.out.println("Summary: Data processed successfully!"); // Appel à System.out (fan-out)
+    }
+
+    public static void main(String[] args) {
+        ExampleClass example = new ExampleClass();
+        example.processData();
+        example.analyzeData();
+        example.printSummary();
+    }
+}
+
+// Une classe auxiliaire pour augmenter le fan-out
+class HelperClass {
+    public void performAction() {
+        System.out.println("Helper class is performing an action."); // Appel à System.out
+    }
+}
+
+
 public class LongMethodExample {
 
     public static void main(String[] args) {
