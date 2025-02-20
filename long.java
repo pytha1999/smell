@@ -38,3 +38,51 @@ public class LongMethodExample {
         return total;
     }
 }
+public class FanOutExample {
+
+    // Méthode principale (Fan-out élevé : elle appelle plusieurs autres méthodes)
+    public void processOrder() {
+        validateOrder();   // Appel à une méthode
+        calculateTotal();  // Appel à une méthode
+        applyDiscount();   // Appel à une méthode
+        sendConfirmation(); // Appel à une méthode
+    }
+
+    // Méthode avec un fan-out de 1 (un seul appel)
+    private void validateOrder() {
+        System.out.println("Validating the order...");
+    }
+
+    // Méthode avec un fan-out de 2 (elle appelle deux méthodes)
+    private void calculateTotal() {
+        addTaxes();        // Appel à une méthode
+        addShippingCost(); // Appel à une méthode
+        System.out.println("Calculating the total amount...");
+    }
+
+    // Méthode simple (Fan-out = 0)
+    private void applyDiscount() {
+        System.out.println("Applying discount...");
+    }
+
+    // Méthode simple (Fan-out = 0)
+    private void sendConfirmation() {
+        System.out.println("Sending order confirmation...");
+    }
+
+    // Méthode avec un fan-out de 0
+    private void addTaxes() {
+        System.out.println("Adding taxes...");
+    }
+
+    // Méthode avec un fan-out de 0
+    private void addShippingCost() {
+        System.out.println("Adding shipping cost...");
+    }
+
+    // Main pour exécuter le code
+    public static void main(String[] args) {
+        FanOutExample example = new FanOutExample();
+        example.processOrder(); // Appel de la méthode principale
+    }
+}
